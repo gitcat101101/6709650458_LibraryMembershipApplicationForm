@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD13F; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #C3002F; 
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #FFF5E1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    border: 2px solid #C3002F; 
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #C3002F; 
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #C3002F; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #C3002F; 
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #99001f; 
+}
+
+.required::after {
+    content: " *";
+    color: #C3002F; 
+}
